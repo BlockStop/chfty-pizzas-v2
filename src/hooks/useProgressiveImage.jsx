@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 const useProgressiveImage = src => {  
     const [sourceLoaded, setSourceLoaded] = useState(null)
@@ -11,3 +11,5 @@ const useProgressiveImage = src => {
   
     return sourceLoaded 
   }
+
+export default useProgressiveImage;

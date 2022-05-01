@@ -4,32 +4,34 @@ import SoldOutComponent from "../../components/SoldOutComponent/SoldOutComponent
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
 import styles from "./HomePage.module.scss";
 import BackgroundPhoto from "../../assets/background.png"
+import useProgressiveImage from "../../hooks/useProgressiveImage";
 
-const HomePage = () => {
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
+const HomePage = (source, placeholder) => {
+    // const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-    useEffect(() => {
-        console.log(`useEffect: ${isImageLoaded}`);
-        const image = new Image();
-        image.onload = () => setIsImageLoaded(true);
-        image.src = BackgroundPhoto;
+    // useEffect(() => {
+    //     console.log(`useEffect: ${isImageLoaded}`);
+    //     const image = new Image();
+    //     image.onload = () => setIsImageLoaded(true);
+    //     image.src = BackgroundPhoto;
     
-        return () => {
-          image.onload = null;
-        };
-    }, []);
+    //     return () => {
+    //       image.onload = null;
+    //     };
+    // }, []);
     
-    if (!isImageLoaded) {
-        return null;
-    }
+    // if (!isImageLoaded) {
+    //     return null;
+    // }
 
-    console.log(isImageLoaded);
+    // console.log(isImageLoaded);
     // props.onLoad(isImageLoaded);
+    const loaded = useProgressiveImage(source)
 
     return(
     <React.Fragment>
-    <div className={styles.page} style={{backgroundImage: `url(${BackgroundPhoto})`}}>
-        {!isImageLoaded && <CustomLoader />}
+    <div className={styles.page} style={{ backgroundImage: `url(${loaded || placeholder})` }}>
+        {/* {!isImageLoaded && <CustomLoader />} */}
         <section className={styles.page__filter}>
             <Navbar />
             <div className={styles.page__text}>
