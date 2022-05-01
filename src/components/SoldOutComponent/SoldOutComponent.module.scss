@@ -1,0 +1,32 @@
+@import '../../styles/base/settings.scss';
+
+.soldOutContainer {
+    background: rgba(251, 105, 98, 0.65);
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: 5%;    
+    text-align: left;
+    width: 608px;
+    height: 81px;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    p {
+        font-family: 'Siracha-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
