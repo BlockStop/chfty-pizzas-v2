@@ -9,6 +9,7 @@ const HomePage = () => {
     const [isImageLoaded, setIsImageLoaded] = useState(false);
 
     useEffect(() => {
+        console.log(`useEffect: ${isImageLoaded}`);
         const image = new Image();
         image.onload = () => setIsImageLoaded(true);
         image.src = BackgroundPhoto;
