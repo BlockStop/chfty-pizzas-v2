@@ -1,0 +1,34 @@
+.page {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/background.png");
+    background-size: cover;
+    object-fit: cover;
+    text-align: center;
+}
+
+.page__filter {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.50);
+    text-align: center;
+
+}
+
+.page__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page__text h1{
+    font-family: 'Siracha-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 333px;
+    line-height: 5px;
+    letter-spacing: 0.07em;
+    color: #FB6962;
+}

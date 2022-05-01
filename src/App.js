@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React, { Suspense } from "react";
+import { Route, Routes, Navigate, Link, BrowserRouter as Router } from 'react-router-dom';
+import CustomLoader from "./components/CustomLoader/CustomLoader";
 import './App.css';
 
-function App() {
+const HomePage = React.lazy(() => import('./pages/Home/HomePage'));
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<CustomLoader />}>
+      <Router>
+        <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/gallery' element={<HomePage />} />
+            <Route path='/about' element={<HomePage />} />
+            <Route path='/menu' element={<HomePage />} />
+            <Route path='/team' element={<HomePage />} />
+            <Route path='/philanthropy' element={<HomePage />} />
+        </Routes>
+      </Router>
+    </Suspense>
   );
 }
 
