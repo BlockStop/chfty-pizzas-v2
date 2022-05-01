@@ -28,8 +28,8 @@ const HomePage = () => {
 
     return(
     <React.Fragment>
-    {!isImageLoaded && <CustomLoader />}
-    {isImageLoaded && <div className={styles.page} style={{backgroundImage: `url(${BackgroundPhoto})`}}>
+    <div className={styles.page} style={{backgroundImage: `url(${BackgroundPhoto})`}}>
+        {!isImageLoaded && <CustomLoader />}
         <section className={styles.page__filter}>
             <Navbar />
             <div className={styles.page__text}>
@@ -37,7 +37,7 @@ const HomePage = () => {
             </div>
             <SoldOutComponent />
         </section>
-    </div> }
+    </div> 
     </React.Fragment>
     );
 }
