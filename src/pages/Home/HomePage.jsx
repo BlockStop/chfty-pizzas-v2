@@ -1,11 +1,8 @@
 import React, {useEffect, useState} from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import SoldOutComponent from "../../components/SoldOutComponent/SoldOutComponent";
-import CustomLoader from "../../components/CustomLoader/CustomLoader";
 import styles from "./HomePage.module.scss";
-import BackgroundPhoto from "../../assets/background.png"
-import useProgressiveImage from "../../hooks/useProgressiveImage";
-import TestPhoto from "../../assets/PizzaLogo.png"
+
 
 const HomePage = (props) => {
     // const [isImageLoaded, setIsImageLoaded] = useState(false);
