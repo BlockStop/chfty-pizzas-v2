@@ -14,6 +14,7 @@ export const StyledMenu = styled.div`
   right: 0;
   transition: transform 0.5s ease-in-out;
   width: 25%;
+  border-left: 1px solid black;
 
   @media screen and (min-width: 800px) and (max-width: 1100px) {
     width: 50%;

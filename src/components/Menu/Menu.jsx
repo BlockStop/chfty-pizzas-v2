@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu, StyledSocials, StyledSocialsCol } from './Menu.styled';
 import { SidebarTheme } from '../../styles/theme/theme';
@@ -8,19 +8,18 @@ import DiscordImg from '../../assets/discord-48.png';
 import OsImg from '../../assets/opensea-black.png';
 import EtherscanImg from '../../assets/etherscan-logo-circle.png';
 
-const Menu = ({ open, ...props }) => {
-  
+const Menu = ({ open, ...props }) => {  
   const isHidden = open ? true : false;
   const tabIndex = isHidden ? 0 : -1;
 
   return (
     <StyledMenu open={open} theme={SidebarTheme}>
-      <Link to="/"> <span role="img" aria-label="home"></span> Home </Link>
-      <Link to="/gallery"> <span role="img" aria-label="gallery"></span> Gallery </Link>
-      <Link to="/about"> <span role="img" aria-label="about"></span> About </Link>
-      <Link to="/menu"> <span role="img" aria-label="menu"></span> Menu </Link>
-      <Link to="/team"> <span role="img" aria-label="team"></span> The Team </Link>
-      <Link to="/philanthropy"> <span role="img" aria-label="philanthropy"></span> Philanthropy </Link>
+      <Link to="/" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="home"></span> Home </Link>
+      <Link to="/gallery" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="gallery"></span> Gallery </Link>
+      <Link to="/about" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="about"></span> About </Link>
+      <Link to="/menu" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="menu"></span> Menu </Link>
+      <Link to="/team" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="team"></span> The Team </Link>
+      <Link to="/philanthropy" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="philanthropy"></span> Philanthropy </Link>
 
       <StyledSocialsCol>
       <StyledSocials>
