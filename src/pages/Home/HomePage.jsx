@@ -33,7 +33,7 @@ const HomePage = (props) => {
 
 
     return(
-    <div className={styles.page} style={{ backgroundImage: `url(${BackgroundPhoto})` }}>
+    <div className={styles.page} style={{ backgroundImage: 'url(https://vsprblockchain.s3.amazonaws.com/background.png)'}}>
         <section className={styles.page__filter}>
             <Navbar />
             <div className={styles.page__text}>
