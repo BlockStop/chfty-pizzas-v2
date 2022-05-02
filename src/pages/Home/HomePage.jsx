@@ -6,7 +6,6 @@ import styles from "./HomePage.module.scss";
 import BackgroundPhoto from "../../assets/background.png"
 import useProgressiveImage from "../../hooks/useProgressiveImage";
 import TestPhoto from "../../assets/PizzaLogo.png"
-import LazyLoad from 'react-lazy-load';
 
 const HomePage = (props) => {
     // const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -34,7 +33,6 @@ const HomePage = (props) => {
 
 
     return(
-    <LazyLoad>
     <div className={styles.page} style={{ backgroundImage: `url(${BackgroundPhoto})` }}>
         <section className={styles.page__filter}>
             <Navbar />
@@ -44,7 +42,6 @@ const HomePage = (props) => {
             <SoldOutComponent />
         </section>
     </div> 
-    </LazyLoad>
     );
 }
 
