@@ -7,20 +7,20 @@ import './App.css';
 const HomePage = React.lazy(() => import('./pages/Home/HomePage'));
 
 function App(props) {
-  // const [imgLoad, setImgLoaded] = useState(false);
+  const [imgLoad, setImgLoaded] = useState(false);
 
-  // const onLoadHandler = (loadStatus) => {
-  //   console.log(`load status from App component: ${loadStatus}`);
-  //   setImgLoaded(loadStatus);
-  // }
+  const onLoadHandler = (loadStatus) => {
+    console.log(`load status from App component: ${loadStatus}`);
+    setImgLoaded(loadStatus);
+  }
 
   return (    
     
     <Suspense fallback={<CustomLoader />}>
       <Router>
         <Routes>
-          <Route path='/' element={<HomePage source={BackgroundPhoto} placeholder={<CustomLoader />}/>} />
-            {/* <Route path='/' element={<HomePage onLoad={onLoadHandler} />} /> */}
+          {/* <Route path='/' element={<HomePage source={BackgroundPhoto} placeholder={<CustomLoader />}/>} /> */}
+            <Route path='/' element={<HomePage onLoad={onLoadHandler} />} />
             <Route path='/gallery' element={<HomePage />} />
             <Route path='/about' element={<HomePage />} />
             <Route path='/menu' element={<HomePage />} />

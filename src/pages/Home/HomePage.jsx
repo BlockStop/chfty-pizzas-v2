@@ -5,33 +5,34 @@ import CustomLoader from "../../components/CustomLoader/CustomLoader";
 import styles from "./HomePage.module.scss";
 import BackgroundPhoto from "../../assets/background.png"
 import useProgressiveImage from "../../hooks/useProgressiveImage";
+import TestPhoto from "../../assets/PizzaLogo.png"
 
-const HomePage = (source, placeholder) => {
-    // const [isImageLoaded, setIsImageLoaded] = useState(false);
+const HomePage = (props) => {
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-    // useEffect(() => {
-    //     console.log(`useEffect: ${isImageLoaded}`);
-    //     const image = new Image();
-    //     image.onload = () => setIsImageLoaded(true);
-    //     image.src = BackgroundPhoto;
+    useEffect(() => {
+        console.log(`useEffect: ${isImageLoaded}`);
+        const image = new Image();
+        image.onload = () => setIsImageLoaded(true);
+        image.src = BackgroundPhoto;
     
-    //     return () => {
-    //       image.onload = null;
-    //     };
-    // }, []);
+        return () => {
+          image.onload = null;
+        };
+    }, []);
     
-    // if (!isImageLoaded) {
-    //     return null;
-    // }
+    if (!isImageLoaded) {
+        return null;
+    }
 
-    // console.log(isImageLoaded);
-    // props.onLoad(isImageLoaded);
-    const loaded = useProgressiveImage(source)
+    console.log(isImageLoaded);
+    props.onLoad(isImageLoaded);
+    // const loaded = useProgressiveImage(source)
+
 
     return(
     <React.Fragment>
-    <div className={styles.page} style={{ backgroundImage: `url(${loaded || placeholder})` }}>
-        {/* {!isImageLoaded && <CustomLoader />} */}
+    {isImageLoaded && <div className={styles.page} style={{ backgroundImage: `url(${BackgroundPhoto})` }}>
         <section className={styles.page__filter}>
             <Navbar />
             <div className={styles.page__text}>
@@ -39,7 +40,7 @@ const HomePage = (source, placeholder) => {
             </div>
             <SoldOutComponent />
         </section>
-    </div> 
+    </div> }
     </React.Fragment>
     );
 }
