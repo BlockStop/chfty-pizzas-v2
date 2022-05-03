@@ -1,0 +1,8 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background: $primary;
+    text-align: center;
+}

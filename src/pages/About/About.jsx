@@ -27,7 +27,9 @@ const AboutPage = () => {
                 </TextContainer>
             </Fade>
                 <div className={styles.img__container}>
+                <Fade>
                     <img src={PizzaOne} loading="lazy"/>
+                </Fade>
                 </div>
             </div>
 

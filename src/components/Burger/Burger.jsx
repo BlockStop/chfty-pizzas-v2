@@ -16,3 +16,4 @@ Burger.propTypes = {
   setOpen: func.isRequired,
 };
 export default Burger;
+

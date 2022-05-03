@@ -1,37 +1,26 @@
-import React, { Suspense, useState } from "react";
-import { Route, Routes, Navigate, Link, BrowserRouter as Router } from 'react-router-dom';
+import React, { Suspense } from "react";
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import CustomLoader from "./components/CustomLoader/CustomLoader";
-import BackgroundPhoto from "./assets/background.png"
 import './App.css';
 
 const HomePage = React.lazy(() => import('./pages/Home/HomePage'));
 const AboutPage = React.lazy(() => import('./pages/About/About'));
+const MenuPage = React.lazy(() => import('./pages/Menu/Menu'));
+const PhilanthropyPage = React.lazy(() => import('./pages/Philanthrophy/Philanthropy'));
+const ComingSoonPage = React.lazy(() => import('./pages/ComingSoon/ComingSoon'));
 
-// const Home = React.lazy(() => {
-//   return new Promise(resolve => {
-//     setTimeout(() => resolve(import("./pages/Home/HomePage")), 1000);
-//   });
-// });
 function App(props) {
-  // const [imgLoad, setImgLoaded] = useState(false);
-
-  // const onLoadHandler = (loadStatus) => {
-  //   console.log(`load status from App component: ${loadStatus}`);
-  //   setImgLoaded(loadStatus);
-  // }
 
   return (    
     <Suspense fallback={<CustomLoader />}>
       <Router>
         <Routes>
-          {/* <Route path='/' element={<HomePage source={BackgroundPhoto} placeholder={<CustomLoader />}/>} /> */}
-            {/* <Route path='/' element={<HomePage onLoad={onLoadHandler} />} /> */}
             <Route path='/' element={<HomePage />} />
-            <Route path='/gallery' element={<AboutPage />} />
+            <Route path='/gallery' element={<ComingSoonPage />} />
             <Route path='/about' element={<AboutPage />} />
-            <Route path='/menu' element={<HomePage />} />
-            <Route path='/team' element={<HomePage />} />
-            <Route path='/philanthropy' element={<HomePage />} />
+            <Route path='/menu' element={<MenuPage />} />
+            <Route path='/team' element={<ComingSoonPage />} />
+            <Route path='/philanthropy' element={<PhilanthropyPage />} />
         </Routes>
       </Router>
     </Suspense>

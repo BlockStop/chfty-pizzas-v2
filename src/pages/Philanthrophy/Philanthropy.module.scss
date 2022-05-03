@@ -1,0 +1,45 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background: $primary;
+    text-align: center;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+
+    @media screen and (min-width: 850px) and (max-width: 1250px) {
+        width: 85%
+    }
+
+    @media screen and (max-width: 850px) {
+        display: inline-block;
+        max-width: 90%;
+
+    }
+}
+
+.img__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    img {
+        height: 35em;
+        width: 35em;
+        align-items: center;
+
+
+    @media screen and (max-width: 850px) {
+        height: 20em;
+        width: 20em;    }
+    }
+}
