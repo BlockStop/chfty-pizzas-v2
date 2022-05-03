@@ -10,6 +10,18 @@
     background: rgba(0, 0, 0, 0.15);
 }
 
+.nav.light {
+    width: 100%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(171, 150, 150, 0.09);
+}
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -22,4 +34,8 @@
     flex-direction: row;
     align-items: center;
     margin-right: 5%;
+
+    @media screen and (max-width: 700px) {
+        margin-right: 12%;
+    }
 }

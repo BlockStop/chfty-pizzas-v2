@@ -5,7 +5,6 @@ export const StyledBurger = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
   height: 2rem;
   background: transparent;
   border: none;
@@ -13,6 +12,7 @@ export const StyledBurger = styled.button`
   padding: 0;
   z-index: 12;
   transition: transform 0.3s ease-in-out;
+
 
   &:focus {
     outline: none;
@@ -27,6 +27,7 @@ export const StyledBurger = styled.button`
     width: 2rem;
     height: 0.25rem;
     background: ${({ open }) => open ? '#000000' : '#FFFFFF'};
+    background: ${({ isReverse }) => isReverse && '#000000'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
