@@ -27,7 +27,7 @@ const AboutPage = () => {
                 </TextContainer>
             </Fade>
                 <div className={styles.img__container}>
-                    <img src={PizzaOne} />
+                    <img src={PizzaOne} loading="lazy"/>
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ const AboutPage = () => {
             </Fade>
             <div className={styles.split}>
                 <div className={styles.img__container__two}>
-                    <img src={PassGif} />
+                    <img src={PassGif} loading="lazy"/>
                 </div>
             </div>
 
