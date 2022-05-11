@@ -1,18 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
+import Popup from '../../components/Popup/Popup';
 import locales from '../../text';
 import ChefImg from '../../assets/cooking-temp.png'
 import Fade from 'react-reveal/Fade';
-import styles from './Menu.module.scss';
+import styles from './Recipe.module.scss';
 
-const Menu = () => {
+const Recipe = () => {
+    const [buttonPopup, setButtonPopup] = useState(false);
     return (
         <div className={styles.page}>
             <Navbar isLight isReverse/>
             <Fade>
-                <PageTitle text='Menu'/>
+                <PageTitle text='Recipe'/>
             </Fade>
             <div className={styles.split}>
             <Fade top>
@@ -27,8 +29,14 @@ const Menu = () => {
                 </Fade>
                 </div>
             </div>
+
+            <Fade>
+                <PageTitle text='Recipe'/>
+            </Fade>
+            <button onClick={() => setButtonPopup(true)}> Open Popup</button>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}> my popup </Popup>
         </div>
     );
 }
 
-export default Menu;
+export default Recipe;

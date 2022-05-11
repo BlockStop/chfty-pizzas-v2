@@ -4,7 +4,7 @@ import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
 import locales from '../../text';
 import PizzaOne from '../../assets/chefpizza.png'
-import PassGif from '../../assets/card-test.gif'
+import PassGif from '../../assets/ethcard.gif'
 import Fade from 'react-reveal/Fade';
 import styles from './About.module.scss';
 
@@ -40,6 +40,7 @@ const AboutPage = () => {
                 <div className={styles.img__container__two}>
                     <img src={PassGif} loading="lazy"/>
                 </div>
+
             </div>
 
         </div>

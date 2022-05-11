@@ -1,0 +1,22 @@
+.connect {
+    button {
+        padding: 16px 20px;
+        border-radius: 5px;
+        background-color: #F93B2D;
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 24px;
+        margin: 20px 20px;
+        font-family: Ubuntu-Regular;
+        outline: none;
+        border: none;
+        transition: all 220ms ease-in-out;
+        cursor: pointer;
+        
+        &:hover {
+        background-color: #000000;
+        border: none;
+        color: #FFFFFF;
+        }
+    }
+}
