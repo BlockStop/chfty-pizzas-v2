@@ -53,14 +53,6 @@ const WalletConnect = () => {
         }
     }
 
-    // const connectWalletButton = () => {
-    //     return (
-    //       <button onClick={connectWalletHandler}>
-    //         Connect Wallet
-    //       </button>
-    //     )
-    //   }
-
     return (
         <div className={styles.connect}>
           <button onClick={connectWalletHandler}>

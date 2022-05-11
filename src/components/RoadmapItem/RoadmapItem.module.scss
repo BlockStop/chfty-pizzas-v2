@@ -1,0 +1,31 @@
+@import '../../styles/base/settings.scss';
+
+.container {
+    border: 1px solid black;
+    background-color: $primary;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    p {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &:hover {
+        transform:scale(1.1, 1.1);
+      }
+}
+
+.status {
+    p {
+        background-color: green;
+    }
+}
+
+.arrow {
+    width: 10%;
+    margin: auto;
+    justify-content: space-between;
+    margin-left: 85%;
+}

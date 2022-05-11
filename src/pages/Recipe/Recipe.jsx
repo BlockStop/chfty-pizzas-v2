@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
 import Popup from '../../components/Popup/Popup';
+import RoadmapItem from '../../components/RoadmapItem/RoadmapItem';
 import locales from '../../text';
 import ChefImg from '../../assets/cooking-temp.png'
 import Fade from 'react-reveal/Fade';
@@ -33,7 +34,10 @@ const Recipe = () => {
             <Fade>
                 <PageTitle text='Recipe'/>
             </Fade>
-            <button onClick={() => setButtonPopup(true)}> Open Popup</button>
+            
+            <button onClick={() => setButtonPopup(true)}>
+            <RoadmapItem roadmapDescription= 'this is a test roadmap description' roadmapStatus='in progress'/>
+            </button>
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}> my popup </Popup>
         </div>
     );
