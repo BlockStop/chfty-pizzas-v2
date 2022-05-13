@@ -5,11 +5,15 @@
     background-color: $primary;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    width: 300px;
+    min-height: 100px;
+    margin: 1em;
 
     p {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+        font-size: 16px;
     }
 
     &:hover {
@@ -19,7 +23,7 @@
 
 .status {
     p {
-        background-color: green;
+        
     }
 }
 

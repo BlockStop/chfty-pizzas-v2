@@ -7,7 +7,7 @@ function RoadmapItem(props) {
     <div className={styles.container}>
         <p> {props.roadmapDescription} </p>
         <div className={styles.status}>
-            <p>{props.roadmapStatus}</p>
+            <p style={{ backgroundColor: props.backColor }}>{props.roadmapStatus}</p>
         </div>
         <div className={styles.arrow}>
             <AiOutlineArrowRight />

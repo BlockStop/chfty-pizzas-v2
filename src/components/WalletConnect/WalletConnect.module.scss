@@ -1,9 +1,11 @@
+@import '../../styles/base/settings.scss';
+
 .connect {
     button {
         padding: 16px 20px;
         border-radius: 5px;
-        background-color: #F93B2D;
-        color: #FFFFFF;
+        background-color: $secondary;
+        color: $white;
         font-weight: normal;
         font-size: 24px;
         margin: 20px 20px;
@@ -12,11 +14,11 @@
         border: none;
         transition: all 220ms ease-in-out;
         cursor: pointer;
-        
+
         &:hover {
-        background-color: #000000;
-        border: none;
-        color: #FFFFFF;
+            background-color: $black;
+            border: none;
+            color: $white;
         }
     }
 }

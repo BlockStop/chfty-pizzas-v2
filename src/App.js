@@ -4,6 +4,7 @@ import CustomLoader from "./components/CustomLoader/CustomLoader";
 import './App.css';
 
 const HomePage = React.lazy(() => import('./pages/Home/HomePage'));
+const SecretMenuPage = React.lazy(() => import('./pages/SecretMenu/SecretMenu'));
 const AboutPage = React.lazy(() => import('./pages/About/About'));
 const RecipePage = React.lazy(() => import('./pages/Recipe/Recipe'));
 const PhilanthropyPage = React.lazy(() => import('./pages/Philanthrophy/Philanthropy'));
@@ -16,7 +17,7 @@ function App(props) {
       <Router>
         <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/secretmenu' element={<ComingSoonPage />} />
+            <Route path='/secretmenu' element={<SecretMenuPage />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/recipe' element={<RecipePage />} />
             <Route path='/team' element={<ComingSoonPage />} />
