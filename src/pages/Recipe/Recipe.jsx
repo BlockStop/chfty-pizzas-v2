@@ -19,8 +19,6 @@ const Recipe = () => {
       const [popupDescription2, setPopupDescription2] = useState('');
       const [popupImg, setPopupImg] = useState('');
       const [number, setNumber] = useState('0');
-
-      console.log(number);
       
       useEffect(() => {
         setPopupTitle(RoadmapContent.content[number]['title'])
