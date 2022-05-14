@@ -18,13 +18,18 @@
     position: relative;
     padding: 32px;
     width: 100%;
-    max-width: 95%;
+    max-width: 75%;
     min-height: 400px;
     background-color: $primary;
     border: 3px solid $black;
     border-radius: 25px;
     transition: transform 0.3s ease-in-out;
     z-index: 3;
+
+
+    @media screen and (max-width: 850px) {
+        max-width: 95%;
+      }
 }
 
 .innerpop .closebtn {

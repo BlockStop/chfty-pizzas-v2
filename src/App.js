@@ -8,6 +8,7 @@ const SecretMenuPage = React.lazy(() => import('./pages/SecretMenu/SecretMenu'))
 const AboutPage = React.lazy(() => import('./pages/About/About'));
 const RecipePage = React.lazy(() => import('./pages/Recipe/Recipe'));
 const PhilanthropyPage = React.lazy(() => import('./pages/Philanthrophy/Philanthropy'));
+const TeamPage = React.lazy(() => import('./pages/Team/Team'));
 const ComingSoonPage = React.lazy(() => import('./pages/ComingSoon/ComingSoon'));
 
 function App(props) {
@@ -20,7 +21,7 @@ function App(props) {
             <Route path='/secretmenu' element={<SecretMenuPage />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/recipe' element={<RecipePage />} />
-            <Route path='/team' element={<ComingSoonPage />} />
+            <Route path='/team' element={<TeamPage />} />
             <Route path='/philanthropy' element={<PhilanthropyPage />} />
         </Routes>
       </Router>
