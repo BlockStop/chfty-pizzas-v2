@@ -18,5 +18,11 @@
     "menuPage": {
         "description1": "The CHFTY Pizza team has a detailed recipe we are following step by step to ensure we grow our brand and community. Here’s some peaks into what we are cooking behind the scenes and what we have planned for the future",
         "description2": "Check it out below"
+    },
+    "teamPage": {
+        "tomDescription": "Tom Colicchio is the chef and owner of Crafted Hospitality, which currently includes New York’s Craft, Temple Court and Vallata; Long Island's Small Batch Los Angeles’ Craft Los Angeles; and Las Vegas’ Heritage Steak and Craftsteak. An 8-time James Beard Award winner, he is the Head Judge and Executive Producer of Bravo’s Top Chef, host of the Citizen Chef Podcast on iHeartRadio and founding member of the Independent Restaurant Coalition.",
+        "spikeDescription": "Spike has several restaurant concepts in the Washington DC area including PLNT Burger, Vim & Victor and We, The Pizza. Leveraging his close proximity to our nation’s capital, Spike combined his passion for food equity and education by working with organizations like CARE, DC Central Kitchen and Food Rescue US. He also serves as the chairman of DC’s Food Policy Council.",
+        "blockstopDescription": "BlockStop is your NFT one stop shop. With experts in product strategy, marketing, and development, BlockStop serves as a creative hub to grow, build and deploy NFT projects for your business",
+        "doorDescription": "The Door | idea house is a creative marketing shop focused on metaverse, NFT, technology, hospitality, celebrity, culinary and lifestyle projects. @thedooronline thedooronline.com"
     }
 }

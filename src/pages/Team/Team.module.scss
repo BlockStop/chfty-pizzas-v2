@@ -16,6 +16,11 @@
 
 .container {
     position: relative;
+
+    h2 {
+        font-family: Siracha-Regular;
+        line-height: 1em;
+    }
   }
   
 .image {
@@ -99,8 +104,8 @@
   
   .text {
     color: white;
-    font-size: 20px;
-    font-family: ZenKurenaido-Regular;
+    font-size: 18px;
+    font-family: Ubuntu-Regular;
     width:100%;
     position: absolute;
     top: 50%;
