@@ -12,7 +12,7 @@ function Popup(props) {
                 <div className={styles.imgwrap}>
                     <Logo />
                 </div>
-                <button className={styles.closebtn} onClick={() => props.setTrigger(false)} style={{ fontSize: '32px' }}> X </button>
+                <button className={styles.closebtn} onClick={() => props.setTrigger(false)} style={{ fontSize: '32px', color:'#000000' }}> X </button>
             </div>
 
             <div className={styles.title}>

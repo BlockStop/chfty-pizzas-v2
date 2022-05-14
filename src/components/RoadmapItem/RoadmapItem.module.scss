@@ -11,6 +11,7 @@
 
     p {
         font-family: Ubuntu-Regular;
+        color: $black;
         width: 80%;
         margin-right: auto;
         margin-left: auto;
@@ -24,7 +25,7 @@
 
 .status {
     p {
-        
+        color: $black;
     }
 }
 
@@ -33,4 +34,5 @@
     margin: auto;
     justify-content: space-between;
     margin-left: 85%;
+    color: black;
 }
