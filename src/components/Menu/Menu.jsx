@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu, StyledSocials, StyledSocialsCol } from './Menu.styled';
 import { SidebarTheme } from '../../styles/theme/theme';

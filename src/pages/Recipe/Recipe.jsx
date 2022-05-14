@@ -3,23 +3,36 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
 import FullRoadmapItem from '../../components/FullRoadmapItem/FullRoadmapItem';
-import Popup from '../../components/Popup/Popup';
 import { RoadmapContent } from '../../text/RoadmapContent';
+import Popup from '../../components/Popup/Popup';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import locales from '../../text';
 import ChefImg from '../../assets/PizzaTwoTop.png'
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
+import Zoom from 'react-reveal/Zoom';
 import styles from './Recipe.module.scss';
 
 const Recipe = () => {
-    useEffect(() => {
-        console.log(`roadmap content: ${RoadmapContent.content[0]['description']}`);
-      }, [])
+      const [buttonPopup, setButtonPopup] = useState(false);
+      const [popupTitle, setPopupTitle] = useState('');
+      const [popupDescription1, setPopupDescription1] = useState('');
+      const [popupDescription2, setPopupDescription2] = useState('');
+      const [popupImg, setPopupImg] = useState('');
+      const [number, setNumber] = useState('0');
 
-    const [buttonPopup, setButtonPopup] = useState(false);
+      console.log(number);
+      
+      useEffect(() => {
+        setPopupTitle(RoadmapContent.content[number]['title'])
+        setPopupDescription1(RoadmapContent.content[number]['extendedDescription1'])
+        setPopupDescription2(RoadmapContent.content[number]['extendedDescription2'])
+        setPopupImg(RoadmapContent.content[number]['imgUrl'])
+      }, [number])
+
+
     return (
-        <div className={styles.page}>
+        <React.Fragment>
+        <div className={`${styles.page} ${buttonPopup && styles.duringPopUp}`}>
             <Navbar isLight isReverse/>
             <Fade>
                 <PageTitle text='The Recipe'/>
@@ -45,35 +58,38 @@ const Recipe = () => {
             </Fade>
             
             <div className={styles.row}>
-                <Bounce bottom>
+                <Zoom>
                 <div className={styles.column}>
-                    <FullRoadmapItem num='0'/>
-                    <FullRoadmapItem num='1'/>
-                    <FullRoadmapItem num='2'/>
+                    <FullRoadmapItem num='0' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='1' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='2' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
                 </div>
-                </Bounce>
+                </Zoom>
 
-                <Bounce bottom>
+                <Zoom>
                 <div className={styles.column}>
-                    <FullRoadmapItem num='3'/>
-                    <FullRoadmapItem num='4'/>
-                    <FullRoadmapItem num='5'/>
-                    <FullRoadmapItem num='6'/>
-                    <FullRoadmapItem num='7'/>
-                    <FullRoadmapItem num='8'/>
+                    <FullRoadmapItem num='3' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='4' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='5' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='6' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='7' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='8' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
                 </div>
-                </Bounce>
+                </Zoom>
 
-                <Bounce bottom>
+                <Zoom>
                 <div className={styles.column}>
-                    <FullRoadmapItem num='9'/>
-                    <FullRoadmapItem num='10'/>
+                    <FullRoadmapItem num='9' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
+                    <FullRoadmapItem num='10' buttonPopup={buttonPopup} setButtonPopup={setButtonPopup} setNumber={setNumber}/>
                 </div>
-                </Bounce>
+                </Zoom>
            
             </div>
-            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}> my popup </Popup>
         </div>
+        <div className={styles.popup}>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup} title={popupTitle} description1={popupDescription1} description2={popupDescription2} popupImg={popupImg} />
+        </div>
+        </React.Fragment>
     );
 }
 
