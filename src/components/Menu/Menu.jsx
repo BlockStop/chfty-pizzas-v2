@@ -15,9 +15,9 @@ const Menu = ({ open, ...props }) => {
   return (
     <StyledMenu open={open} theme={SidebarTheme}>
       <Link to="/" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="home"></span> Home </Link>
-      <Link to="/secretmenu" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="secretmenu"></span> Secret Menu </Link>
       <Link to="/about" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="about"></span> About </Link>
-      <Link to="/recipe" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="recipe"></span> The Recipe </Link>
+      <Link to="/menu" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="recipe"></span> Menu </Link>
+      <Link to="/secretrecipes" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="secretmenu"></span> Secret Recipes </Link>
       <Link to="/team" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="team"></span> The Team </Link>
       <Link to="/philanthropy" onClick={() => props.setOpen(!open)}> <span role="img" aria-label="philanthropy"></span> Philanthropy </Link>
 

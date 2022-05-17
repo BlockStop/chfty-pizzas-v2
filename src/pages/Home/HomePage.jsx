@@ -1,9 +1,11 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import SoldOutComponent from "../../components/SoldOutComponent/SoldOutComponent";
-import styles from "./HomePage.module.scss";
+import PizzaOne from '../../assets/PizzaLogo.png';
+import PizzaTwo from '../../assets/PizzaTwoTop.png';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import styles from "./HomePage.module.scss";
 
 
 const HomePage = (props) => {
@@ -13,12 +15,18 @@ const HomePage = (props) => {
             <Navbar />
             <div className={styles.page__text}>
                 <Fade>
-                    <h1>CHFTY</h1>
+                    <h1>SOLD OUT</h1>
                 </Fade>
+                <div className={styles.img__row}>
+                    <Fade>
+                        <img src={PizzaOne}/>
+                        <img src={PizzaTwo}/>
+                    </Fade>
+                </div>
+                <Bounce right>
+                    <SoldOutComponent />
+                </Bounce>
             </div>
-            <Bounce right>
-                <SoldOutComponent />
-            </Bounce>
         </section>
     </div> 
     );

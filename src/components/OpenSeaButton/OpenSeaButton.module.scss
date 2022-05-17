@@ -2,7 +2,7 @@
 
 .osButton {
     button {
-        background-color: rgba(255, 255, 255, 0.77) !important;
+        background-color: $secondary !important;
         color: $black !important;
         margin: 1rem;
         padding: 0.5rem;
@@ -10,7 +10,7 @@
         font-family: 'Siracha-Regular';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: 0.05em;
         display: flex;
         flex-direction: row;

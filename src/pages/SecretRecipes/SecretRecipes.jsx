@@ -3,19 +3,19 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import Fade from 'react-reveal/Fade';
 import WalletConnect from '../../components/WalletConnect/WalletConnect';
-import styles from './SecretMenu.module.scss';
+import styles from './SecretRecipes.module.scss';
 
 
-function SecretMenu() {
+function SecretRecipes() {
   return (
     <div className={styles.page}>
         <Navbar isLight isReverse/>
         <Fade>
-            <PageTitle text='Secret Menu'/>
+            <PageTitle text='Secret Recipes'/>
         </Fade>
         <WalletConnect />
     </div>
   )
 }
 
-export default SecretMenu;
+export default SecretRecipes;

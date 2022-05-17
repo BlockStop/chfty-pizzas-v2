@@ -10,9 +10,9 @@ import locales from '../../text';
 import ChefImg from '../../assets/PizzaTwoTop.png'
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import styles from './Recipe.module.scss';
+import styles from './Menu.module.scss';
 
-const Recipe = () => {
+const Menu = () => {
       const [buttonPopup, setButtonPopup] = useState(false);
       const [popupTitle, setPopupTitle] = useState('');
       const [popupDescription1, setPopupDescription1] = useState('');
@@ -91,4 +91,4 @@ const Recipe = () => {
     );
 }
 
-export default Recipe;
+export default Menu;

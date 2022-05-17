@@ -13,7 +13,7 @@ const AboutPage = () => {
         <div className={styles.page}>
             <Navbar isLight isReverse/>
             <Fade>
-                <PageTitle text='CHFTY Pizzas'/>
+                <PageTitle text='ABOUT'/>
             </Fade>
             <div className={styles.split}>
             <Fade top>
