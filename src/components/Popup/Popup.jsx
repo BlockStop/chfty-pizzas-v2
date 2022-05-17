@@ -20,17 +20,25 @@ function Popup(props) {
             </div>
 
             <div className={styles.split}>
-            <Fade top>
-                <TextContainer> 
-                    {props.description1} <br /> <br />
-                    {props.description2} <br /> <br />
-                </TextContainer>
-            </Fade>
-                <div className={styles.img__container}>
-                <Fade>
-                    <img src={props.popupImg} loading="lazy"/>
+                <Fade top>
+                    <TextContainer> 
+                        {props.description1} <br /> <br />
+                        {props.description2} <br /> <br />
+                    </TextContainer>
                 </Fade>
-                </div>
+                    <div className={styles.img__container}>
+                        <Fade>
+                            <img src={props.popupImg} loading="lazy"/>
+                        </Fade>
+                    </div>
+            </div>
+
+            <div className={styles.status}>
+                <Fade top>
+                    <TextContainer>
+                        Status: <p > <span style={{backgroundColor:props.color}}>{props.status}</span> </p>
+                    </TextContainer>
+                </Fade>
             </div>
 
             {props.children}
