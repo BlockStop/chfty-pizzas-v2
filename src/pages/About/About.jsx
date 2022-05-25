@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
 import locales from '../../text';
-import PizzaOne from '../../assets/chefpizza.png'
+import PizzaOne from '../../assets/chefpizza.webp'
 import PassGif from '../../assets/ethcard.gif'
 import Fade from 'react-reveal/Fade';
 import styles from './About.module.scss';

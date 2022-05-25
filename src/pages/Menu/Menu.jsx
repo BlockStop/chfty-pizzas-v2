@@ -4,7 +4,7 @@ import PageTitle from '../../components/PageTitle/PageTitle';
 import FullRoadmapItem from '../../components/FullRoadmapItem/FullRoadmapItem';
 import { RoadmapContent } from '../../text/RoadmapContent';
 import Popup from '../../components/Popup/Popup';
-import PizzaOne from '../../assets/Pizzas1.png'
+import PizzaOne from '../../assets/Pizzas_1.png'
 import PizzaTwo from '../../assets/Pizzas2.png'
 import PizzaThree from '../../assets/Pizzas3.png'
 import Fade from 'react-reveal/Fade';

@@ -80,6 +80,8 @@ const WalletConnect = () => {
             <p>These are exclusive CHFTY cooking demos only accessible to members of the CHFTY club </p>
           </div>
           }
+
+          test
         </div>
     );
 
