@@ -3,10 +3,10 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import locales from '../../text';
 import Fade from 'react-reveal/Fade';
-import TomImg from '../../assets/tom.jpeg';
-import SpikeImg from '../../assets/spike.jpg';
-import BlockstopImg from '../../assets/blockstop.jpg';
-import DoorImg from '../../assets/door.png';
+import TomImg from '../../assets/tom.webp';
+import SpikeImg from '../../assets/spike.webp';
+import BlockstopImg from '../../assets/blockstop.webp';
+import DoorImg from '../../assets/door.webp';
 import styles from './Team.module.scss';
 
 function Team() {

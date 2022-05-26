@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import { ethers } from "ethers";
+import SoldOutComponent from '../SoldOutComponent/SoldOutComponent';
 import Web3Modal from "web3modal";
 import WalletConnectProvider from '@walletconnect/web3-provider';
 import CoinbaseWalletSDK from '@coinbase/wallet-sdk';
 import contract from '../../contracts/ChftyPizzas.json';
 import CryPizza from '../../assets/crypizza-test.jpg'
+import PizzaOne from '../../assets/PizzaLogo50.webp';
 import styles from './WalletConnect.module.scss';
 
 const INFURA_ID = "3ef01540f7de46f9bff8c8fad83ca826";
@@ -67,11 +69,17 @@ const WalletConnect = () => {
 
     return (
         <div className={styles.connect}>
+          <div className={styles.connect__row}>
+            {!currentAccount && <img src={PizzaOne}/> }
+            {!currentAccount && <p > ....psssssstt. Click the big red button! </p> }
+            {!currentAccount && <img src={PizzaOne}/> }
+          </div>
           {!currentAccount && <button onClick={connectWalletHandler}> Connect Wallet </button>}
           {currentAccount && balance == 0 && 
           <div className={styles.nopizza}>
-            <p>You do not hold any CHFTY Pizzas. Please purchase one on the secondary market to view this page</p>
             <img src={CryPizza} /> 
+            <p>Oh no! Looks like you do not hold any CHFTY Pizzas. Please purchase one on the secondary market to access the contents of this page</p>
+            <SoldOutComponent />
           </div>
           }
           {currentAccount && balance > 0 && 
@@ -80,8 +88,6 @@ const WalletConnect = () => {
             <p>These are exclusive CHFTY cooking demos only accessible to members of the CHFTY club </p>
           </div>
           }
-
-          test
         </div>
     );
 

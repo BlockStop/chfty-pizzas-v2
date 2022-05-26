@@ -3,8 +3,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
 import locales from '../../text';
-import PizzaOne from '../../assets/chefpizza.webp'
-import PassGif from '../../assets/ethcard.gif'
+import PizzaOne from '../../assets/chefpizza.webp';
+import CardImg from '../../assets/card.webp';
 import Fade from 'react-reveal/Fade';
 import styles from './About.module.scss';
 
@@ -38,7 +38,7 @@ const AboutPage = () => {
             </Fade>
             <div className={styles.split}>
                 <div className={styles.img__container__two}>
-                    <img src={PassGif} loading="lazy"/>
+                    <img src={CardImg} loading="lazy"/>
                 </div>
 
             </div>
