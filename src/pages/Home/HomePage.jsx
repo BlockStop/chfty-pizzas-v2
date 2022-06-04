@@ -17,7 +17,7 @@ const HomePage = (props) => {
             <div className={styles.center__row}>
             <div className={styles.page__text}>
                 <Fade>
-                    <h1>SOLD OUT</h1>
+                    <h1>CHFTY PIZZAS</h1>
                 </Fade>
                 <div className={styles.img__row}>
                     <Fade>

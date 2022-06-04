@@ -16,7 +16,7 @@ const Navbar = (props) => {
         <div className={`${styles.nav} ${props.isLight && styles.light}`}>
             <div className={styles.logo}>
             <Link to="/" onClick={() => props.setOpen(!open)}>
-                <button> CHFTY PIZZAS </button>
+                <Logo />
             </Link>
             </div>
 
