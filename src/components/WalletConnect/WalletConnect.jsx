@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import { ethers } from "ethers";
 import SoldOutComponent from '../SoldOutComponent/SoldOutComponent';
+import SecretHolder from '../../pages/SecretHolder/SecretHolder';
 import Web3Modal from "web3modal";
 import WalletConnectProvider from '@walletconnect/web3-provider';
 import CoinbaseWalletSDK from '@coinbase/wallet-sdk';
 import contract from '../../contracts/ChftyPizzas.json';
-import CryPizza from '../../assets/crypizza-test.jpg'
+import CryPizza from '../../assets/crypizza.webp'
 import PizzaOne from '../../assets/PizzaLogo50.webp';
 import styles from './WalletConnect.module.scss';
 
@@ -43,6 +44,7 @@ const web3Modal = new Web3Modal({
 const WalletConnect = () => {
     const [currentAccount, setCurrentAccount] = useState(null);
     const [balance, setBalance] = useState(0);
+    const [uri, setUri] = useState(null);
 
     const connectWalletHandler = async () => {
         web3Modal.clearCachedProvider();
@@ -59,9 +61,14 @@ const WalletConnect = () => {
             const nftContract = new ethers.Contract(contractAddress, abi, signer);
     
             let nftBalance = await nftContract.balanceOf(accounts[0]);
+            let tokenIdHex = await nftContract.tokenOfOwnerByIndex(accounts[0], 0);
+            let tokenId = parseInt(tokenIdHex._hex, 16);
+            let tokenUri = await nftContract.tokenURI(tokenId);
+
+            console.log(tokenUri);
+            setUri(tokenUri);
             setBalance(nftBalance);
 
-            
         } catch (err) {
             console.log(err);
         }
@@ -84,8 +91,7 @@ const WalletConnect = () => {
           }
           {currentAccount && balance > 0 && 
           <div className={styles.hodler}>
-            <p>Welcome CHFTY Pizza hodler! Inside our secret menu is a repository of exclusive recipes and video files</p>
-            <p>These are exclusive CHFTY cooking demos only accessible to members of the CHFTY club </p>
+            <SecretHolder account={currentAccount} num={balance} uri={uri}/>
           </div>
           }
         </div>

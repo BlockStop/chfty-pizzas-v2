@@ -16,7 +16,7 @@
 
 .innerpop {
     position: relative;
-    padding: 32px;
+    padding: 8px;
     width: 100%;
     max-width: 75%;
     min-height: 400px;
@@ -99,9 +99,9 @@
     width: 100%;
   
     img {
-      height: 15em;
-      width: 15em;
+      width: 18em;
       align-items: center;
+      margin-left: 2em;
   
       @media screen and (max-width: 850px) {
         height: 10em;

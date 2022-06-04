@@ -9,7 +9,7 @@ import styles from './SecretRecipes.module.scss';
 function SecretRecipes() {
   return (
     <div className={styles.page}>
-        <Navbar isLight isReverse/>
+        <Navbar/>
         <Fade>
             <PageTitle text='Secret Recipes'/>
         </Fade>

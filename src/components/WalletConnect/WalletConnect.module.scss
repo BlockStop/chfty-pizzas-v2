@@ -33,6 +33,7 @@
     align-items: center;
     font-family: Ubuntu-Regular;
     font-size: 20px;
+    color: $primary;
 
     @media screen and (max-width: 500px) {
         font-size: 14px;
@@ -55,6 +56,7 @@
     p {
         font-size: 24px;
         font-family: Ubuntu-Regular;
+        color: $primary;
     }
     img {
         height: 20em;
@@ -62,9 +64,11 @@
 }
 
 .hodler {
+    width: 100%;
     p {
         font-size: 24px;
         font-family: Ubuntu-Regular;
+        color: $primary;
     }
     img {
         height: 20em;

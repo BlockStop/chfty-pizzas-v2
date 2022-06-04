@@ -33,16 +33,6 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <Fade>
-                <PageTitle text='Coming Soon...'/>
-            </Fade>
-            <div className={styles.split}>
-                <div className={styles.img__container__two}>
-                    <img src={CardImg} loading="lazy"/>
-                </div>
-
-            </div>
-
         </div>
     );
 

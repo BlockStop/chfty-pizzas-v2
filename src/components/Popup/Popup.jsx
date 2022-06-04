@@ -20,12 +20,10 @@ function Popup(props) {
             </div>
 
             <div className={styles.split}>
-                <Fade top>
                     <TextContainer> 
                         {props.description1} <br /> <br />
                         {props.description2} <br /> <br />
                     </TextContainer>
-                </Fade>
                     <div className={styles.img__container}>
                         <Fade>
                             <img src={props.popupImg} loading="lazy"/>
