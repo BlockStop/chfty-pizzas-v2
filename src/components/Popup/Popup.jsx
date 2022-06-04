@@ -25,9 +25,7 @@ function Popup(props) {
                         {props.description2} <br /> <br />
                     </TextContainer>
                     <div className={styles.img__container}>
-                        <Fade>
-                            <img src={props.popupImg} loading="lazy"/>
-                        </Fade>
+                        <img src={props.popupImg} loading="lazy"/>
                     </div>
             </div>
 

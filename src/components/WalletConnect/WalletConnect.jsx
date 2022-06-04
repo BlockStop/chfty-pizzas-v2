@@ -5,6 +5,7 @@ import SecretHolder from '../../pages/SecretHolder/SecretHolder';
 import Web3Modal from "web3modal";
 import WalletConnectProvider from '@walletconnect/web3-provider';
 import CoinbaseWalletSDK from '@coinbase/wallet-sdk';
+import { CircularProgress } from "@material-ui/core";
 import contract from '../../contracts/ChftyPizzas.json';
 import CryPizza from '../../assets/crypizza.webp'
 import PizzaOne from '../../assets/PizzaLogo50.webp';
@@ -45,6 +46,7 @@ const WalletConnect = () => {
     const [currentAccount, setCurrentAccount] = useState(null);
     const [balance, setBalance] = useState(0);
     const [uri, setUri] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     const connectWalletHandler = async () => {
         web3Modal.clearCachedProvider();
@@ -52,6 +54,7 @@ const WalletConnect = () => {
         const provider = new ethers.providers.Web3Provider(instance);
 
         try {
+            setIsLoading(true);
             const accounts = await window.ethereum.request({method: 'eth_requestAccounts'})
             console.log("Found an account! address: ", accounts[0]);
             setCurrentAccount(accounts[0]);
@@ -68,9 +71,11 @@ const WalletConnect = () => {
             console.log(tokenUri);
             setUri(tokenUri);
             setBalance(nftBalance);
+            setIsLoading(false);
 
         } catch (err) {
             console.log(err);
+            setIsLoading(false);
         }
     }
 
@@ -82,14 +87,15 @@ const WalletConnect = () => {
             {!currentAccount && <img src={PizzaOne}/> }
           </div>
           {!currentAccount && <button onClick={connectWalletHandler}> Connect Wallet </button>}
-          {currentAccount && balance == 0 && 
+          {isLoading && <CircularProgress />}
+          {currentAccount && balance == 0 && !isLoading && 
           <div className={styles.nopizza}>
             <img src={CryPizza} /> 
             <p>Oh no! Looks like you do not hold any CHFTY Pizzas. Please purchase one on the secondary market to access the contents of this page</p>
             <SoldOutComponent />
           </div>
           }
-          {currentAccount && balance > 0 && 
+          {currentAccount && balance > 0 && !isLoading &&
           <div className={styles.hodler}>
             <SecretHolder account={currentAccount} num={balance} uri={uri}/>
           </div>

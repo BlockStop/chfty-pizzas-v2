@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import RecipeComponent from '../../components/RecipeComponent/RecipeComponent';
+import { RecipeOneTimestamps } from '../../text/RecipeOneTimestamps';
 import jQuery from 'jquery';
 import locales from '../../text';
 import BackTest from '../../assets/test-back.webp';
@@ -44,6 +46,7 @@ const SecretHolder = (props) => {
             </div>
 
             <div className={styles.recipe__container}>
+                <div className={styles.center__container}>
                 <img src={imgUrl} loading="lazy" />
                 <p>{shortenAddress(props.account.toString() || "")}</p>
                 <p>Proudly hodling {props.num.toString()} CHFTY Pizzas</p>
@@ -77,6 +80,11 @@ const SecretHolder = (props) => {
                 <p> {isHolder() && locales.en.secretHolderPage.holderText} </p>
                 <p> {isApe() && locales.en.secretHolderPage.apeText} </p>
                 <p> {isWhale() && locales.en.secretHolderPage.whaleText} </p>
+                </div>
+
+                <div className={styles.recipe}>
+                    <RecipeComponent title="Recipe 1: Tacos" embedId='kco73-ZgzWA' timestamps={RecipeOneTimestamps}/>
+                </div>
 
             </div>
         </React.Fragment>

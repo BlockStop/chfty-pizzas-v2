@@ -4,7 +4,7 @@ import TextContainer from '../../components/TextContainer/TextContainer';
 import Navbar from '../../components/Navbar/Navbar';
 import locales from '../../text';
 import Fade from 'react-reveal/Fade';
-import BigGreenImg from '../../assets/big_green.png'
+import BigGreenImg from '../../assets/bglogo.webp'
 import styles from './Philanthropy.module.scss';
 
 const Philanthropy = () => {
