@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
+import TextContainerTwo from '../../components/TextContainerTwo/TextContainerTwo';
 import locales from '../../text';
 import PizzaOne from '../../assets/chefpizza.webp';
 import CardImg from '../../assets/card.webp';
@@ -17,14 +18,14 @@ const AboutPage = () => {
             </Fade>
             <div className={styles.split}>
             <Fade top>
-                <TextContainer> 
+                <TextContainerTwo> 
                     {locales.en.aboutPage.description1} <br /> <br />
                     {locales.en.aboutPage.description2} <br /> <br />
                     {locales.en.aboutPage.description3} <br /> <br />
                     {locales.en.aboutPage.description4} <br /> <br />
                     {locales.en.aboutPage.description5} <br /> <br />
                     {locales.en.aboutPage.description6}
-                </TextContainer>
+                </TextContainerTwo>
             </Fade>
                 <div className={styles.img__container}>
                 <Fade>

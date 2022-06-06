@@ -41,29 +41,13 @@
 
     img {
         position: fixed;
-        top: 8em;
-        bottom: 0em;
-        right: -5em;
-        height: 55em;
-        align-items: center;
+        bottom: -10%;
+        right: -6%;
+        width: 50%;
+        max-width: 100%;
+        height: auto;
         z-index: 5;
 
-
-    @media screen and (min-width: 1200px) and (max-width: 1400px) {
-        height: 45em;
-        top: 10em;
-    }
-
-    @media screen and (min-width: 1000px) and (max-width: 1200px) {
-        height: 35em;
-        top: 10em;
-    }
-
-    @media screen and (min-width: 850px) and (max-width: 1000px) {
-        height: 35em;
-        top: 10em;
-        right: -8em;
-    }
 
     @media screen and (max-width: 850px) {
         position: static;
