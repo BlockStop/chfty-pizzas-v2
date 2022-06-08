@@ -1,0 +1,102 @@
+@import '../../styles/base/settings.scss';
+
+.pageTitle {
+    font-family: 'Siracha-Regular';
+    font-style: normal;
+    font-size: 28px;
+    color: $primary;
+    text-align: left;
+    margin-left: 10%;
+
+    @media screen and (max-width: 850px) {
+        font-size: 20px;
+    
+    }
+
+    div {
+        width: 18rem;
+        height: 0.25rem;
+        border-radius: 10px;
+        background-color: $secondary;
+    }
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__row {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 850px) {
+        display: inline-block;
+        margin: auto;    
+    }
+}
+
+.ingrediants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: left;
+
+    @media screen and (max-width: 850px) {
+        display: inline-block;
+        width: 90%;
+        margin: auto;    
+    }
+
+    h3 {
+        font-family: Ubuntu-Regular;
+        font-size: 20px !important;
+        text-align: left;
+        color: $primary;
+    }
+
+    p {
+        font-family: Ubuntu-Regular;
+        font-size: 14px !important;
+        text-align: left;
+        color: $primary;
+    }
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: left;
+    margin-top: 2em;
+
+    @media screen and (max-width: 850px) {
+        display: inline-block;
+        width: 90%;
+        margin: auto;     
+    }
+
+    h3 {
+        font-family: Ubuntu-Regular;
+        font-size: 20px !important;
+        text-align: left;
+        color: $primary;
+    }
+
+    h4 {
+        font-family: Ubuntu-Regular;
+        font-size: 18px !important;
+        text-align: left;
+        color: $primary;
+    }
+
+    p {
+        font-family: Ubuntu-Regular;
+        font-size: 14px !important;
+        text-align: left;
+        color: $primary;
+    }
+}
