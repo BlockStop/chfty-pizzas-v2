@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import RecipeComponent from '../../components/RecipeComponent/RecipeComponent';
 import { RecipeOneTimestamps } from '../../text/RecipeOneTimestamps';
+import { RecipeOneIngredients } from '../../text/RecipeOneIngredients';
+import { RecipeOneInstructions } from '../../text/RecipeOneInstructions';
 import jQuery from 'jquery';
 import locales from '../../text';
 import BackTest from '../../assets/test-back.webp';
@@ -83,7 +85,7 @@ const SecretHolder = (props) => {
                 </div>
 
                 <div className={styles.recipe}>
-                    <RecipeComponent title="Recipe 1: Tacos" embedId='kco73-ZgzWA' timestamps={RecipeOneTimestamps}/>
+                    <RecipeComponent title="Recipe 1: Tacos" embedId='kco73-ZgzWA' timestamps={RecipeOneTimestamps} ingredients={RecipeOneIngredients} instructions={RecipeOneInstructions}/>
                 </div>
 
             </div>

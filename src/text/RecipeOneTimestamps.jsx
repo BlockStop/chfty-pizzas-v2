@@ -1,4 +1,3 @@
-  // Declared an array of items
   export const RecipeOneTimestamps = [
     "00:00 - We are live!",
     "00:47 - Tom unveils favorite kitchen gadget",

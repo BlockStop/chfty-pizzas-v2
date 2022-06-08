@@ -17,10 +17,10 @@ function RecipeComponent(props) {
 
         <div className={styles.info__row}>
             <div className={styles.ingrediants}>
-                <h3>Ingrediants: </h3>
+                <h3>Ingredients: </h3>
                 <p>
-                    {props.timestamps.map(timestamp => <div key={timestamp} 
-                    style={styles}>{timestamp}</div>)}
+                    {props.ingredients.map(ingredient => <div key={ingredient} 
+                    style={styles}>{ingredient}</div>)}
                 </p>
             </div>
 
@@ -32,6 +32,15 @@ function RecipeComponent(props) {
                 </p>
             </div>
 
+        </div>
+
+        <div className={styles.instructions}>
+            <h3> Instructions: </h3>
+            <h4> FOR THE BIRRIA </h4>
+            <p>
+                {props.instructions.map(instruction => <div key={instruction} 
+                    style={styles}>{instruction} <br/> <br/></div>)}
+            </p>
         </div>
     </React.Fragment>
   )
