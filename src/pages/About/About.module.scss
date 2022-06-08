@@ -41,12 +41,17 @@
 
     img {
         position: fixed;
-        bottom: -10%;
+        bottom: -20%;
         right: -6%;
         width: 50%;
         max-width: 100%;
         height: auto;
         z-index: 5;
+
+    @media screen and (min-width: 850px) and (max-width: 1400px) {
+        bottom: -5%;
+
+    }
 
 
     @media screen and (max-width: 850px) {

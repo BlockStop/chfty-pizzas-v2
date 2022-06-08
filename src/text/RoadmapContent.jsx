@@ -42,8 +42,8 @@ export const RoadmapContent = {
             color: '#FCFC99',
             title: "CHFTY Cooking Demos",
             extendedDescription1: "Join Tom, Spike & Special Guests in interactive cooking demos. Learn quick tips, and see how these incredible operate in their very own home kitchens! Broadcasted via our streaming partner Kittch. More demos and special guests TBA!!",
-            extendedDescription2: "Current 2022 Schedule: -- Tom: June - Monday, 6/6/22 -- Spike: July - Thursday, 7/14/22 -- Tom: August - Monday, 8/8/22 -- Spike: September - Thursday, 9/8/22 -- Tom: October - Monday, 10/10/22 -- Spike: November - Thursday, 11/17/22 -- Tom: December - Monday,  12/5/22 ",
-            imgUrl: "https://vsprblockchain.s3.amazonaws.com/demo.webp"
+            extendedDescription2: "Check out our current schedule",
+            imgUrl: "https://vsprblockchain.s3.amazonaws.com/demo_schedule.webp"
         },
         {
             description: 'Top CHFTY Competitions',
@@ -76,7 +76,7 @@ export const RoadmapContent = {
             description: 'CHFTY Merch Store',
             status: 'Under Development',
             color: '#FB6962',
-            title: "Merch",
+            title: "CHFTY Merch",
             extendedDescription1: "CHFTY will be collabing with Food brands to offer CHFTY exclusive items, token-gated so only CHFTY holders can have access",
             extendedDescription2: "",
             imgUrl: "https://vsprblockchain.s3.amazonaws.com/knives.webp"
@@ -86,8 +86,8 @@ export const RoadmapContent = {
             status: 'Under Development',
             color: '#FB6962',
             title: "CHFTY Pass",
-            extendedDescription1: "Take a look at our CHFTY All Stars… we’re certainly up to something… Summer 2022 is going to be *fire emoji*",
-            extendedDescription2: "AND CHFTY Pizza holders will be able to claim a free CHFTY Pass…",
+            extendedDescription1: "Take a look at our CHFTY All Stars… we’re certainly up to something… Coming late summer 2022",
+            extendedDescription2: "CHFTY Pizza holders will be able to claim a free CHFTY Pass!",
             imgUrl: "https://vsprblockchain.s3.amazonaws.com/mystery_card.webp"
         },           
         {
@@ -95,7 +95,7 @@ export const RoadmapContent = {
             status: 'Under Development',
             color: '#FB6962',
             title: "CHFTY Platform",
-            extendedDescription1: "The future home for all of the Food & Beverage industry in Web3. Coming soon...",
+            extendedDescription1: "The future home for the entire Food & Beverage industry in Web3. Coming soon…",
             extendedDescription2: "",
             imgUrl: "https://vsprblockchain.s3.amazonaws.com/network.png"
         }                        

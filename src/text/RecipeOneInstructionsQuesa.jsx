@@ -1,0 +1,6 @@
+export const RecipeOneInstructionsQuesa = [
+    "1. In a saucepan, over medium low heat, bring the consomé to a bare simmer (there should be a layer of dark red looking fat/oil on the top). Construct a taco station that includes: the consomé simmering on one burner, a cast-iron pan or plancha heated over medium heat, a plate of shredded beef from the birria, and corn tortillas to the side, as well as small bowls filled with shredded Oaxaca cheese, cilantro and chopped onions.",
+    "2. Working in batches, take about ⅓ cup of beef and add to the pan or plancha and begin to reheat and sear the beef, tossing occasionally to ensure even browning. Take one corn tortilla and dip it shallowly into the consomé, coating both sides with the dark red fat. Place the tortilla on the pan or plancha and cover with Oaxaca cheese.",
+    "3. Fry the tortilla for 3 minutes or until the cheese has mostly melted and the underside has browned and started to crisp. Place the now seared meat on one half of the tortilla and top with cilantro and white onion. Fold the tortilla into a taco, sear each side for an additional 30 seconds and remove. Repeat this process until you have run out of beef.",
+    "4. Serve the tacos topped with cilantro and onion, with lime wedges on the side, and small bowls of consomé for dipping."
+  ];

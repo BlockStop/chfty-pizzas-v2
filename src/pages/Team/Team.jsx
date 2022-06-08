@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import locales from '../../text';
 import Fade from 'react-reveal/Fade';
-import TomImg from '../../assets/tom.webp';
+import TomImg from '../../assets/tom_headshot.webp';
 import SpikeImg from '../../assets/spike.webp';
 import BlockstopImg from '../../assets/blockstop.webp';
 import DoorImg from '../../assets/door.webp';
