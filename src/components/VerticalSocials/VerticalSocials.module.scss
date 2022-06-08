@@ -1,0 +1,28 @@
+@import '../../styles/base/settings.scss';
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primary;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    z-index: 7;
+    border-radius: 20px;
+
+    img {
+        height: 2em;
+        width: 2em;
+        margin: 1em;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform:scale(1.2, 1.2);
+        }
+    }
+
+    a {
+        border-bottom: none;
+    }
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Burger from "../Burger/Burger";
 import Menu from "../Menu/Menu";
 import Logo from "../Logo/Logo";
+import VerticalSocials from "../VerticalSocials/VerticalSocials";
 import { Link } from 'react-router-dom';
 import styles from "./Navbar.module.scss"
 import { useMediaQuery } from "react-responsive";
@@ -30,7 +31,6 @@ const Navbar = (props) => {
                     <Link to="/philanthropy"> <button> Philanthropy </button> </Link>
                 </div>
             }
-
             
             {isMobile && 
                 <div className={styles.burger}>

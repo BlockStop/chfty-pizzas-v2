@@ -5,6 +5,7 @@ import { SidebarTheme } from '../../styles/theme/theme';
 import { Link } from 'react-router-dom';
 import TwitterImg from '../../assets/twitter-48.png';
 import DiscordImg from '../../assets/discord-48.png';
+import InstagramImg from '../../assets/insta.png';
 import OsImg from '../../assets/opensea-black.png';
 import EtherscanImg from '../../assets/etherscan-logo-circle.png';
 
@@ -28,6 +29,9 @@ const Menu = ({ open, ...props }) => {
         </a>
         <a href = "https://discord.gg/EZJFp8DkUK">
           <img src={DiscordImg}/>
+        </a>
+        <a href = "https://www.instagram.com/chfty_nft/">
+          <img src={InstagramImg}/>
         </a>
         <a href = "https://opensea.io/collection/chfty-chftypizzas">
           <img src={OsImg}/>
