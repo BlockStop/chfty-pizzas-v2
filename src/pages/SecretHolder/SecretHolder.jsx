@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import RecipeComponent from '../../components/RecipeComponent/RecipeComponent';
 import RecipeComponentBasic from '../../components/RecipeComponentBasic/RecipeComponentBasic';
-import { RecipeOneTimestamps } from '../../text/RecipeOneTimestamps';
 import { RecipeOneIngredients } from '../../text/RecipeOneIngredients';
 import { RecipeOneInstructions } from '../../text/RecipeOneInstructions';
 import { RecipeOneIngredientsDuck } from '../../text/RecipeOneIngredientsDuck';
 import { RecipeOneInstructionsDuck } from '../../text/RecipeOneInstructionsDuck';
 import { RecipeOneInstructionsQuesa } from '../../text/RecipeOneInstructionsQuesa';
+import { RecipeTwoIngredients } from '../../text/RecipeTwoIngredients';
+import { RecipeTwoInstructions } from '../../text/RecipeTwoInstructions';
 import jQuery from 'jquery';
 import locales from '../../text';
 import BackTest from '../../assets/test-back.webp';
@@ -92,7 +93,7 @@ const SecretHolder = (props) => {
                     <RecipeComponent title="CHFTY Cooking Demo: Tacos 5/2" embedId='kco73-ZgzWA' timestamps={RecipeOneIngredientsDuck} ingredients={RecipeOneIngredients} instructions={RecipeOneInstructions} instructions_two={RecipeOneInstructionsQuesa} instructions_three={RecipeOneInstructionsDuck}
                     ingredients_one="Spike's Birria Tacos" ingredients_two="Tom's Duck Tacos" title_one="FOR THE BIRRIA" title_two="FOR THE BIRRIA QUESATACOS" title_three="FOR THE DUCK TACOS"/>
 
-                    <RecipeComponentBasic title="CHFTY Cooking Demo: Tom's Roast Chicken 6/6" embedId='etMWkoYKSxo' ingredients={RecipeOneIngredients} instructions={RecipeOneInstructions}/>
+                    <RecipeComponentBasic title="CHFTY Cooking Demo: Tom's Roast Chicken 6/6" embedId='etMWkoYKSxo' ingredients={RecipeTwoIngredients} instructions={RecipeTwoInstructions}/>
                 </div>
 
             </div>
