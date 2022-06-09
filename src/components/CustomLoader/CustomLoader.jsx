@@ -1,6 +1,6 @@
 import React from "react";
 import CustomImageLoader from 'custom-image-loader-react';
-import LoadingImg from '../../assets/PizzaLogo.png';
+import LoadingImg from '../../assets/PizzaLogo50.webp';
 import styles from './CustomLoader.module.scss';
 
 const CustomLoader = () => {

@@ -1,10 +1,11 @@
 import React from 'react';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import TextContainer from '../../components/TextContainer/TextContainer';
+import TextContainerTwo from '../../components/TextContainerTwo/TextContainerTwo';
 import Navbar from '../../components/Navbar/Navbar';
 import locales from '../../text';
 import Fade from 'react-reveal/Fade';
-import BigGreenImg from '../../assets/big_green.png'
+import BigGreenImg from '../../assets/bglogo.webp'
 import styles from './Philanthropy.module.scss';
 
 const Philanthropy = () => {
@@ -16,10 +17,10 @@ const Philanthropy = () => {
             </Fade>
             <div className={styles.split}>
             <Fade top>
-                <TextContainer> 
+                <TextContainerTwo> 
                     {locales.en.philanthropyPage.description1} <br /> <br />
                     {locales.en.philanthropyPage.description2}
-                </TextContainer>
+                </TextContainerTwo>
             </Fade>
                 <div className={styles.img__container}>
                 <Fade>

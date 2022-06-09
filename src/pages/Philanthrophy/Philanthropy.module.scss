@@ -33,13 +33,12 @@
     width: 100%;
 
     img {
-        height: 35em;
-        width: 35em;
+        width: 25em;
         align-items: center;
 
 
     @media screen and (max-width: 850px) {
-        height: 20em;
-        width: 20em;    }
+        width: 20em;    
+    }
     }
 }

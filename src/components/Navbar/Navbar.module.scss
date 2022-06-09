@@ -1,3 +1,5 @@
+@import "../../styles/base/settings.scss";
+
 .nav {
     width: 100%;
     padding: 10px;
@@ -8,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.15);
+    min-height: 100px;
 }
 
 .nav.light {
@@ -23,10 +26,18 @@
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 3%;
+    margin-left: 5%;
+
+    button {
+        font-size: 22px;
+        font-family: Siracha-Regular;
+        letter-spacing: 0.07em;
+        color: $secondary;
+        border: none;
+        background-color: transparent !important;
+        cursor: pointer;
+
+    }
 }
 
 .burger {
@@ -39,3 +50,88 @@
         margin-right: 12%;
     }
 }
+
+.row.light {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+
+    button {
+        color: #000000;
+        padding: 8px 20px;
+        border-radius: 5px;
+        background-color: transparent;
+        font-family: Siracha-Regular;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        position: relative;
+        transition: all 220ms ease-in-out;
+        cursor: pointer;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 80%;
+            margin: auto;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $secondary;
+            transition: transform 0.35s ease-out;
+        }
+    
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom center;
+            }
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+
+    button {
+        color: $primary;
+        padding: 8px 20px;
+        border-radius: 5px;
+        background-color: transparent;
+        font-family: Siracha-Regular;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        transition: all 220ms ease-in-out;
+        position: relative;
+        cursor: pointer;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 80%;
+            margin: auto;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $secondary;
+            transition: transform 0.35s ease-out;
+        }
+    
+        &:hover {
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom center;
+            }
+        }
+    }
+}
+

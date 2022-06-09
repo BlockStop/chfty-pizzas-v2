@@ -1,9 +1,9 @@
 {
     "aboutPage": {
-        "description1": "CHFTY Pizzas aim to bridge the gap between the Food & Beverage industry and the Metaverse",
-        "description2": "A collection of 2,777 NFTs that give you access into the largest digital community of foodies and celebrity chefs",
-        "description3": "The CHFTY brand is creating a new definition for utility. Initial offerings include exclusive digital masterclasses with household name chefs, IRL events, sophisticated kitchenware giveaways and more",
-        "description4": "And this is just the beginning",
+        "description1": "CHFTY Pizzas is bridging the gap between the Food & Beverage industry and Web3",
+        "description2": "Featuring a collection of 2,777 unique NFTs, ownership gives you access into the largest digital community of foodies and celebrity chefs",
+        "description3": "The CHFTY brand is creating a new definition for utility. Initial offerings include exclusive digital CHFTY Cooking Demos with world famous chefs, IRL events, sophisticated kitchenware giveaways and more",
+        "description4": "This is just the beginning",
         "description5": "Industries are quickly trying to figure out how to get involved in the NFT space. While they are planning, we are building",
         "description6": "Led by culinary experts Tom Colicchio and Spike Mendelsohn, CHFTY invites you to grab a virtual slice and connect with a community that is focused on joining holders with their favorite chefs and foods"
     },
@@ -16,7 +16,18 @@
         "description2": "As the First Non-Profit led philanthropic DAO, we are excited to help fund their members with a % of our project as they vote on how to help donors"
     },
     "menuPage": {
-        "description1": "The CHFTY Pizza team has a lot of menu items rolling out. Here’s some peaks into what we are working on behind the scenes and what we have planned for the future",
-        "description2": "Check it out below"
+        "description1": "The CHFTY Pizza team has a detailed recipe we are following step by step to ensure we grow our brand and community. Here’s some peaks into what we are cooking behind the scenes and what we have planned for the future",
+        "description2": "This includes our Live Roadmap (The Menu), Token-Gated Sections for CHFTY Pizza holders only (Secret Recipes), and more to come!!"
+    },
+    "teamPage": {
+        "tomDescription": "Tom Colicchio is the chef and owner of Crafted Hospitality, which currently includes New York’s Craft, Temple Court and Vallata; Long Island's Small Batch Los Angeles’ Craft Los Angeles; and Las Vegas’ Heritage Steak and Craftsteak. An 8-time James Beard Award winner, he is the Head Judge and Executive Producer of Bravo’s Top Chef, host of the Citizen Chef Podcast on iHeartRadio and founding member of the Independent Restaurant Coalition.",
+        "spikeDescription": "Spike has several restaurant concepts in the Washington DC area including PLNT Burger, Vim & Victor and We, The Pizza. Leveraging his close proximity to our nation’s capital, Spike combined his passion for food equity and education by working with organizations like CARE, DC Central Kitchen and Food Rescue US. He also serves as the chairman of DC’s Food Policy Council.",
+        "blockstopDescription": "BlockStop is your NFT one stop shop. With experts in product strategy, marketing, and development, BlockStop serves as a creative hub to grow, build and deploy NFT projects for your business",
+        "doorDescription": "The Door | idea house is a creative marketing shop focused on metaverse, NFT, technology, hospitality, celebrity, culinary and lifestyle projects. @thedooronline thedooronline.com"
+    },
+    "secretHolderPage": {
+        "holderText": "Hey CHFTY Pizza Holder! Thanks for being an awesome part of this community, check out our CHFTY demos below",
+        "apeText": "Looks like you’ve aped pretty hard into CHFTY Pizzas! Thank you for being such an important part of this community, please enjoy the CHFTY Demos below",
+        "whaleText": "WOW Look at all those CHFTY Pizzas! You’ve whaled into this collection and there is a lot coming to reward you for your conviction. Thank you for being a crucial member of our community. For now, we hope you enjoy our CHFTY Demos below"
     }
 }

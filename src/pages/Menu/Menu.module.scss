@@ -5,13 +5,24 @@
   min-height: 100vh;
   background: $primary;
   text-align: center;
+
+  button {
+    border: none;
+    background-color: $primary;
+
+  }
+}
+
+.page.duringPopUp {
+  filter: blur(4px);
+  overflow: hidden;
+
 }
 
 .split {
   display: flex;
   flex-direction: row;
   text-align: left;
-  align-items: center;
   width: 75%;
   margin: auto;
 
@@ -32,8 +43,8 @@
   width: 100%;
 
   img {
-    height: 35em;
-    width: 35em;
+    height: 25em;
+    width: 25em;
     align-items: center;
 
     @media screen and (max-width: 850px) {
@@ -41,4 +52,41 @@
       width: 20em;
     }
   }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+
+  h2 {
+    font-size: 28px;
+    font-family: Siracha-Regular;
+    letter-spacing: 0.07em;
+    color: $black;
+  }
+
+  img {
+    height: 8em;
+  }
+  
+  @media screen and (max-width: 850px) {
+    width: 100%;
+
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 850px) {
+    display: inline-block;
+    max-width: 90%;
+  }
+}
+
+.popup {
+  
 }

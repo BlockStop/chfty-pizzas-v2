@@ -5,11 +5,14 @@
 @font-face {
   font-family:'Siracha-Regular';
   src: local('Siracha-Regular'), url(./styles/fonts/Sriracha-Regular.ttf) format('truetype');
+  font-display: block;
+
 }
 
 @font-face {
   font-family:'Ubuntu-Regular';
   src: local('Ubuntu-Regular'), url(./styles/fonts/Ubuntu-Regular.ttf) format('truetype');
+  font-display: block;
 }
 
 body {

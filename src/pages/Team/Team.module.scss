@@ -1,0 +1,131 @@
+@import '../../styles/base/settings.scss';
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background: $primary;
+    text-align: center;
+
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+
+    h2 {
+        font-family: Siracha-Regular;
+        line-height: 1em;
+    }
+  }
+  
+.image {
+    display: block;
+    height: 25em;
+    width: 25em;
+    margin: 40px;
+    border-radius: 20px;
+    
+    @media screen and (max-width: 480px) {
+        height: 20em;
+        width: 20em;
+    
+    }
+    
+  }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 0.5em;
+    margin-block-end: 3em;
+
+    @media screen and (max-width: 900px) {
+        display: inline-block;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25em;
+    width: 25em;
+    margin: 40px;
+    opacity: 0;
+    transition: .5s ease;
+    background: #000000;
+    border-radius: 20px;
+
+    @media screen and (min-width:480px) and (max-width: 900px) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        right: 0;
+        height: 25em;
+        width: 25em;
+        margin: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background: #000000;
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        right: 0;
+        height: 20em;
+        width: 20em;
+        margin: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background: #000000;
+        border-radius: 20px;
+    }
+
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.88;
+}
+  
+  .text {
+    color: white;
+    font-size: 18px;
+    font-family: Ubuntu-Regular;
+    width:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @media screen and (max-width: 480px) {
+        color: white;
+        font-size: 16px;
+        font-family: ZenKurenaido-Regular;
+        width:100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+  }
