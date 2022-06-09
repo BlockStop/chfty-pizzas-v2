@@ -41,7 +41,7 @@ export const RoadmapContent = {
             status: 'Always In Progress',
             color: '#FCFC99',
             title: "CHFTY Cooking Demos",
-            extendedDescription1: "Join Tom, Spike & Special Guests in interactive cooking demos. Learn quick tips, and see how these incredible operate in their very own home kitchens! Broadcasted via our streaming partner Kittch. More demos and special guests TBA!!",
+            extendedDescription1: "Join Tom, Spike & Special Guests in interactive cooking demos. Learn quick tips, and see how these incredible chefs operate in their very own home kitchens! Broadcasted via our streaming partner Kittch. More demos and special guests TBA!!",
             extendedDescription2: "Check out our current schedule",
             imgUrl: "https://vsprblockchain.s3.amazonaws.com/demo_schedule.webp"
         },
