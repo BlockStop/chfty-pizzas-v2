@@ -15,6 +15,7 @@ function RecipeComponentBasic(props) {
             <YoutubeEmbed  embedId={props.embedId}/>
         </div>
 
+    
         <div className={styles.info__row}>
             <div className={styles.ingrediants}>
                 <h3>Ingredients: {props.ingredients_one}</h3>

@@ -15,6 +15,8 @@ import HolderImg from '../../assets/chefpizza.webp'
 import ApeImg from '../../assets/monke.webp';
 import WhaleImg from '../../assets/whale.webp';
 import styles from './SecretHolder.module.scss';
+import { RecipeThreeIngredients } from '../../text/RecipeThreeIngrediants';
+import { RecipeThreeInstructions } from '../../text/RecipeThreeInstructions';
 
 const SecretHolder = (props) => {
     const [imgUrl, setImgUrl] = useState(null);
@@ -94,6 +96,8 @@ const SecretHolder = (props) => {
                     ingredients_one="Spike's Birria Tacos" ingredients_two="Tom's Duck Tacos" title_one="FOR THE BIRRIA" title_two="FOR THE BIRRIA QUESATACOS" title_three="FOR THE DUCK TACOS"/>
 
                     <RecipeComponentBasic title="CHFTY Cooking Demo: Tom's Roast Chicken 6/6" embedId='etMWkoYKSxo' ingredients={RecipeTwoIngredients} instructions={RecipeTwoInstructions}/>
+                    <RecipeComponentBasic title="CHFTY Cooking Demo: Spike and Rocco's Paella 6/23" embedId='3rztv2bCRVM' ingredients={RecipeThreeInstructions} instructions={RecipeThreeIngredients}/>
+
                 </div>
 
             </div>
