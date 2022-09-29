@@ -17,6 +17,8 @@ import WhaleImg from '../../assets/whale.webp';
 import styles from './SecretHolder.module.scss';
 import { RecipeThreeIngredients } from '../../text/RecipeThreeIngrediants';
 import { RecipeThreeInstructions } from '../../text/RecipeThreeInstructions';
+import { RecipeFourIngredients } from '../../text/RecipeFourIngredients';
+import { RecipeFourInstructions } from '../../text/RecipeFourInstructions';
 
 const SecretHolder = (props) => {
     const [imgUrl, setImgUrl] = useState(null);
@@ -97,6 +99,8 @@ const SecretHolder = (props) => {
 
                     <RecipeComponentBasic title="CHFTY Cooking Demo: Tom's Roast Chicken 6/6" embedId='etMWkoYKSxo' ingredients={RecipeTwoIngredients} instructions={RecipeTwoInstructions}/>
                     <RecipeComponentBasic title="CHFTY Cooking Demo: Spike and Rocco's Paella 6/23" embedId='3rztv2bCRVM' ingredients={RecipeThreeInstructions} instructions={RecipeThreeIngredients}/>
+                    <RecipeComponentBasic title="CHFTY Cooking Demo: Tom's Summer Pasta 8/8" embedId='c6rbQnsyb5I' ingredients={RecipeFourIngredients} instructions={RecipeFourInstructions}/>
+
 
                 </div>
 
